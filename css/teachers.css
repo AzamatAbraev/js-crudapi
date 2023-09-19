@@ -1,0 +1,111 @@
+@import "../css/common.css";
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #F7F6FF;
+}
+
+main {
+  padding-top: 93.6px;
+  background-color: #F7F6FF ;
+}
+
+.search {
+  display: flex;
+  flex: 1;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  h3 {
+    font-weight: 700;
+  }
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+}
+
+.teachers-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.pagination {
+  padding-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-count {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.teachers-img {
+  padding-bottom: 10px;
+}
+
+.teachers-card {
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.teachers-pic,
+.teachers-img {
+  width: 100%;
+}
+
+.teachers-body {
+  padding: 10px;
+  min-height: 243.45px;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.total-teachers {
+  font-weight: 700;
+  color: red;
+}
+
+@media (max-width: 1200px) {
+  .teachers-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .teachers-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .teachers-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
