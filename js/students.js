@@ -35,7 +35,7 @@ function getStudentCard({
         />
       </div>
       <div class="teachers-body">
-        <h3>${id} ${firstName} ${lastName}</h3>
+        <h3>${firstName} ${lastName}</h3>
         <p>
           Email:
           <span class="text-decoration-underline"
